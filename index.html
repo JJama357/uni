@@ -1,0 +1,45 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title> Mountain View University website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="/logo.png" alt="logo"></a>
+        <div class="navlinks" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Courses</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+<div class="textbox">
+    <h1>Best University for Web Development</h1>
+    <p>Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.</p>
+    <a href="" class="herobtn">Visit us to learn more</a>
+</div>
+</section>
+
+<script>
+    var navLinks=document.getElementById('navLinks');
+
+    function showMenu(){
+        navLinks.style.right='0';
+    }
+    function hideMenu(){
+        navLinks.style.right='-200px';
+    }
+</script>
+</body>
+</html>
